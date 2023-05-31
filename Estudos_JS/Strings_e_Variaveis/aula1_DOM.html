@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Java Script</p>
+    <div> Clique em mim</div>
+
+    <style>
+        body {
+            background-color: rgb(98, 135, 214);
+            font: normal 20ppt;
+            color: aliceblue;
+            font-family: Arial;
+        }
+    </style>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(window.document.URL)
+
+        window.document.write(`Está escrito assim: ${p1.innerText} `)
+        p1.style.color = 'green'
+        corpo.style.background = 'black'
+
+    </script>
+</body>
+</html>
